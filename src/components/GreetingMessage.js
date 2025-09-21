@@ -2,13 +2,19 @@ import styles from './GreetingMessage.module.css';
 
 function GreetingMessage({ user, theme }) {
     if (!user) {
-        return <p className={`${styles.greeting} ${styles[theme]}`}>Привет!</p>;
+        return (
+            <div className={styles.container}>
+                <p className={`${styles.greeting} ${styles[theme]}`}>Привет!</p>
+                <img src='/default-avatar.jpg' alt='avatar' className={styles.avatar} />
+            </div>
+        );
     }
 
     return (
-        <p className={`${styles.greeting} ${styles[theme]}`}>
-            Привет, {user.first_name}!
-        </p>
+        <div className={styles.container}>
+            <p className={`${styles.greeting} ${styles[theme]}`}>Привет, {user.first_name}!</p>
+            <img src={user.photo_url || '/default-avatar.jpg'} alt='avatar' className={styles.avatar} />
+        </div>
     );
 }
 

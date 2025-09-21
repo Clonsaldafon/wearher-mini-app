@@ -1,25 +1,34 @@
 import logo from './logo.svg';
 import './App.css';
 
+import WebApp from '@twa-dev/sdk';
+import { useEffect, useState } from 'react';
+
+import GreetingMessage from './components/GreetingMessage';
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [user, setUser] = useState(null);
+    const [theme, setTheme] = useState('light');
+
+    useEffect(() => {
+        WebApp.ready();
+        WebApp.expand();
+
+        if (WebApp.initDataUnsafe?.user) {
+            setUser(WebApp.initDataUnsafe.user);
+        }
+
+        if (WebApp.themeParams?.bg_color) {
+            const isDark = WebApp.themeParams.bg_color !== '#ffffff';
+            setTheme(isDark ? 'dark' : 'light');
+        }
+    }, []);
+
+    return (
+        <div className='App'>
+            <GreetingMessage user={user} theme={theme} />
+        </div>
+    );
 }
 
 export default App;

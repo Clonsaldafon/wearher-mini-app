@@ -1,0 +1,15 @@
+.greeting {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+/* светлая тема по умолчанию */
+.light {
+  color: #2c3e50;
+}
+
+/* темная тема */
+.dark {
+  color: #ecf0f1;
+}

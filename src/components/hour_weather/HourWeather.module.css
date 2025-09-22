@@ -1,0 +1,32 @@
+.container {
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.hour {
+    padding: 15px 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    box-shadow: 0px 0px 4px #242424;
+}
+
+.time {
+    font-size: 12px;
+    color: #9B9EAD;
+}
+
+.icon {
+    padding-top: 8px;
+    width: 35px;
+}
+
+.temperature {
+    padding-top: 16px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFF;
+}

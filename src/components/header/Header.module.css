@@ -1,0 +1,39 @@
+.container {
+    padding: 20px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.light {
+    color: #0A0A22;
+}
+
+.dark {
+    color: #FFF;
+}
+
+.menu_button {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    background-image: url('../../../public/menu-burger.png');
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.city {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+}
+
+.avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #FFF;
+}

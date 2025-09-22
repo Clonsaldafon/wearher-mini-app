@@ -3,7 +3,7 @@ import { useState } from "react";
 import styles from './CityInput.module.css';
 
 function CityInput({ onCitySubmit, theme }) {
-    const [city, setCity] = useState('');
+    const [city, setCity] = useState('Челябинск');
 
     const handleSubmit = () => {
         if (city.trim() !== '') onCitySubmit(city.trim());

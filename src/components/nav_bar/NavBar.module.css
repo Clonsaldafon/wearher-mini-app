@@ -1,0 +1,28 @@
+.tabs {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.tabs button {
+    padding: 0px 16px 16px 16px;
+    flex: 1;
+    background-color: transparent;
+    color: #868794;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.tabs button.active {
+    font-weight: 500;
+    color: #FFF;
+    border-bottom: 1px solid #FFF;
+}
+
+.dark .tabs button {
+    /* color: #868794; */
+}
+
+.dark .tabs button.active {
+    /* color: #FFF; */
+}

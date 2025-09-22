@@ -5,7 +5,6 @@ function GreetingMessage({ user, theme }) {
         return (
             <div className={styles.container}>
                 <p className={`${styles.greeting} ${styles[theme]}`}>Привет!</p>
-                <img src='/default-avatar.jpg' alt='avatar' className={styles.avatar} />
             </div>
         );
     }
@@ -13,7 +12,6 @@ function GreetingMessage({ user, theme }) {
     return (
         <div className={styles.container}>
             <p className={`${styles.greeting} ${styles[theme]}`}>Привет, {user.first_name}!</p>
-            <img src={user.photo_url || '/default-avatar.jpg'} alt='avatar' className={styles.avatar} />
         </div>
     );
 }

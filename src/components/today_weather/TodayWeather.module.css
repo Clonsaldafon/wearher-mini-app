@@ -13,13 +13,17 @@
 .date {
     padding: 6px 16px;
     display: inline;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 16px;
+}
+.date.light {
+    color: #7D7E86;
+    background-color: #D4D4D4;
 }
 .date.dark {
-    font-size: 10px;
     color: #9B9EAD;
-    text-align: center;
     background-color: #32333E;
-    border-radius: 16px;
 }
 
 .content {
@@ -55,13 +59,18 @@
 
 .conditions {
     font-size: 14px;
+}
+.conditions.light {
+    color: #7D7E86;
+}
+.conditions.dark {
     color: #FFF;
 }
 
 .more {
     padding: 15px 40px;
     font-size: 14px;
-    color: #9B9EAD;
+    color: #7D7E86;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,7 +84,10 @@
     justify-content: space-between;
 }
 
-.more span {
+.more.light span {
+    color: #222329;
+}
+.more.dark span {
     color: #FFF;
 }
 

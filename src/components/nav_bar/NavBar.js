@@ -9,7 +9,7 @@ function NavBar({ nowWeather, forecast, theme }) {
 
     return (
         <div className={`${styles.container} ${styles[theme]}`}>
-            <div className={styles.tabs}>
+            <div className={`${styles.tabs} ${styles[theme]}`}>
                 <button
                     className={activeTab === 'today' ? styles.active : ''}
                     onClick={() => setActiveTab('today')}

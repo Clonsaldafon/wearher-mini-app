@@ -6,8 +6,6 @@ import { useEffect, useState } from 'react';
 
 import Header from './components/header/Header';
 import NavBar from './components/nav_bar/NavBar';
-// import GreetingMessage from './components/GreetingMessage';
-// import CityInput from './components/CityInput';
 import ErrorMessage from './components/ErrorMessage';
 
 import { getWeather, get5DayForecast } from './services/WeatherService';
@@ -27,8 +25,8 @@ function App() {
         setUser(WebApp.initDataUnsafe?.user || null);
 
         const isDark = WebApp.themeParams?.bg_color && WebApp.themeParams.bg_color !== '#ffffff';
-        // setTheme(isDark ? 'dark' : 'light');
-        setTheme('dark');
+        setTheme(isDark ? 'dark' : 'light');
+        // setTheme('dark');
 
         loadData('Челябинск')
     }, []);

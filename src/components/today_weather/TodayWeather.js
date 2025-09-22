@@ -5,9 +5,7 @@ import { formatDate } from '../../utils/formatDate';
 import HourWeather from '../hour_weather/HourWeather';
 
 function TodayWeather({ data, forecast, theme }) {
-    if (!forecast) {
-        return <div className={`${styles.container} ${styles[theme]}`}>Загрузка...</div>;
-    }
+    if (!forecast) return '';
 
     const description = data.weather[0].description;
 
@@ -25,10 +23,10 @@ function TodayWeather({ data, forecast, theme }) {
                 />
                 <div className={styles.temperature}>
                     <p className={styles.degrees}>{Math.round(data.main.temp)}°</p>
-                    <p className={styles.conditions}>{description.charAt(0).toUpperCase()}{description.slice(1)}</p>
+                    <p className={`${styles.conditions} ${styles[theme]}`}>{description.charAt(0).toUpperCase()}{description.slice(1)}</p>
                 </div>
             </div>
-            <div className={styles.more}>
+            <div className={`${styles.more} ${styles[theme]}`}>
                 <div>
                     <p>
                         Ощущается <span>{Math.round(data.main.feels_like)}°C</span>

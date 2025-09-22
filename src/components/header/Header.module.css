@@ -5,29 +5,32 @@
     align-items: center;
 }
 
-.light {
-    color: #0A0A22;
-}
-
-.dark {
-    color: #FFF;
-}
-
 .menu_button {
     width: 24px;
     height: 24px;
     cursor: pointer;
     border: none;
     background-color: transparent;
-    background-image: url('../../../public/menu-burger.png');
     outline: none;
     -webkit-tap-highlight-color: transparent;
 }
+.menu_button.light {
+    background-image: url('../../../public/menu-burger-light.png');
+}
+.menu_button.dark {
+    background-image: url('../../../public/menu-burger-dark.png');
+}
 
 .city {
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 20px;
     letter-spacing: 0.8px;
+}
+.city.light {
+    color: #222329;
+}
+.city.dark {
+    color: #FFF;
 }
 
 .avatar {
@@ -35,5 +38,4 @@
   height: 24px;
   border-radius: 50%;
   object-fit: cover;
-  border: 1px solid #FFF;
 }

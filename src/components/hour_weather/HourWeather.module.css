@@ -16,6 +16,11 @@
 
 .time {
     font-size: 12px;
+}
+.container.light .time {
+    color: #7D7E86;
+}
+.container.dark .time {
     color: #9B9EAD;
 }
 
@@ -28,5 +33,11 @@
     padding-top: 16px;
     font-weight: 600;
     font-size: 16px;
+    color: #FFF;
+}
+.container.light .temperature {
+    color: #222329;
+}
+.container.dark .temperature {
     color: #FFF;
 }

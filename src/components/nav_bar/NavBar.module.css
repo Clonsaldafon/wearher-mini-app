@@ -7,22 +7,21 @@
 .tabs button {
     padding: 0px 16px 16px 16px;
     flex: 1;
-    background-color: transparent;
     color: #868794;
+    background-color: transparent;
     outline: none;
     -webkit-tap-highlight-color: transparent;
 }
 
 .tabs button.active {
     font-weight: 500;
+}
+.tabs.light button.active {
+    color: #222329;
+    border-bottom: 1px solid #222329;
+}
+
+.tabs.dark button.active {
     color: #FFF;
     border-bottom: 1px solid #FFF;
-}
-
-.dark .tabs button {
-    /* color: #868794; */
-}
-
-.dark .tabs button.active {
-    /* color: #FFF; */
 }

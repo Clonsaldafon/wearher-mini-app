@@ -1,0 +1,97 @@
+.container {
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+.light {
+    color: #2c3e50;
+}
+.dark {
+    color: #FFF;
+}
+
+.date {
+    padding: 6px 16px;
+    display: inline;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 16px;
+}
+.date.light {
+    color: #7D7E86;
+    background-color: #D4D4D4;
+}
+.date.dark {
+    color: #9B9EAD;
+    background-color: #32333E;
+}
+
+.content {
+    padding: 7px 50px 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon {
+    padding: 0;
+    width: 120px;
+}
+
+.temperature {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.degrees {
+    font-weight: 700;
+    font-size: 72px;
+    background-image: linear-gradient(
+        -47deg,
+        #545760 0%,
+        #A2A4B5 100%
+    );
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.conditions {
+    font-size: 14px;
+}
+.conditions.light {
+    color: #7D7E86;
+}
+.conditions.dark {
+    color: #FFF;
+}
+
+.more {
+    padding: 15px 40px;
+    font-size: 14px;
+    color: #7D7E86;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.more div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.more.light span {
+    color: #222329;
+}
+.more.dark span {
+    color: #FFF;
+}
+
+.separator {
+    width: 100%;
+    border: 1px solid rgba(151, 151, 151, 0.1652);
+}

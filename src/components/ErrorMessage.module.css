@@ -1,0 +1,12 @@
+.error {
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.light {
+    color: red;
+}
+
+.dark {
+    color: #ff7f7f;
+}

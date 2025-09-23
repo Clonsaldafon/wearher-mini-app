@@ -1,0 +1,16 @@
+.container {
+    margin-top: 16px;
+}
+
+.day {
+    margin-bottom: 16px;
+    padding: 0 20px;
+}
+
+.light {
+    color: #222329;
+}
+
+.dark {
+    color: #FFF;
+}
